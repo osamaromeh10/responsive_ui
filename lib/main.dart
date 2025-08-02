@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_ui/anthor_exapmle_with_aspect_ratio.dart';
+import 'package:responsive_ui/intrinsic_height_example.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(body: AnthorExapmleWithAspectRatio()),
+      home: Scaffold(body: IntrinsicHeightExample()),
     );
   }
 }
