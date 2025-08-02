@@ -1,8 +1,8 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
-import 'package:responsive_ui/desktop_layout.dart';
-import 'package:responsive_ui/mobile_lauout.dart';
+import 'package:responsive_ui/Examples/desktop_layout.dart';
+import 'package:responsive_ui/Examples/mobile_lauout.dart';
 
 class LayoutBuilderExample extends StatelessWidget {
   const LayoutBuilderExample({super.key});
