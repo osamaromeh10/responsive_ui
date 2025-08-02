@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_ui/solve_error_icon_with_flexible.dart';
+import 'package:responsive_ui/fitted_box_example.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(body: SloveIconErrorWithFlexible()),
+      home: Scaffold(body: FittedBoxExample()),
     );
   }
 }
