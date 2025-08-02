@@ -6,11 +6,14 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomScrollView(
-      slivers: [
-        SliverToBoxAdapter(child: SizedBox(height: 15)),
-        CustomSliverGrid(),
-      ],
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16),
+      child: CustomScrollView(
+        slivers: [
+          SliverToBoxAdapter(child: SizedBox(height: 16)),
+          CustomSliverGrid(),
+        ],
+      ),
     );
   }
 }
