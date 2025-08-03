@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_ui/Examples/details_view.dart';
 
-class MobileLayout extends StatelessWidget {
-  const MobileLayout({super.key});
+class MobileLayoutExample extends StatelessWidget {
+  const MobileLayoutExample({super.key});
 
   @override
   Widget build(BuildContext context) {

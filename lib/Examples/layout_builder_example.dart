@@ -2,7 +2,7 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:responsive_ui/Examples/desktop_layout.dart';
-import 'package:responsive_ui/Examples/mobile_lauout.dart';
+import 'package:responsive_ui/Examples/mobile_lauout_example.dart';
 
 class LayoutBuilderExample extends StatelessWidget {
   const LayoutBuilderExample({super.key});
@@ -17,7 +17,7 @@ class LayoutBuilderExample extends StatelessWidget {
 
         if (constraints.maxWidth <= 500) {
           // <= 500 : Smaller Than or Equal 500 and 500 mean the Break Point for The Mobile
-          return MobileLayout();
+          return MobileLayoutExample();
         } else {
           return DesktopLayout();
         }
