@@ -18,16 +18,22 @@ class _HomeViewState extends State<HomeView> {
         key: scaffoldKey,
         drawer: CustomDrawer(),
         backgroundColor: Color(0xffD8D8D8),
-        appBar: AppBar(
-          backgroundColor: Colors.black,
-          leading: GestureDetector(
-            onTap: () {
-              scaffoldKey.currentState!.openDrawer();
-            },
-            child: Icon(Icons.menu, color: Colors.white),
-          ),
-        ),
+        appBar: MediaQuery.sizeOf(context).width - 32 < 900
+            ? buildAppBar(scaffoldKey)
+            : null,
         body: HomeViewBody(),
+      ),
+    );
+  }
+
+  AppBar buildAppBar(GlobalKey<ScaffoldState> scaffoldKey) {
+    return AppBar(
+      backgroundColor: Colors.black,
+      leading: GestureDetector(
+        onTap: () {
+          scaffoldKey.currentState!.openDrawer();
+        },
+        child: Icon(Icons.menu, color: Colors.white),
       ),
     );
   }
